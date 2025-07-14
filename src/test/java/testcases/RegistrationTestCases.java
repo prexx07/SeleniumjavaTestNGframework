@@ -12,11 +12,10 @@ public class RegistrationTestCases extends BaseClass{
 	
 	@Test
 	public void verifyRegistrationWithValidData() throws InterruptedException {
-		
+		//HomeObject creation
 		HomePageObjects hpo = new HomePageObjects(driver);
 		
 		commonMethods.handleExplicitWait(driver, 10, hpo.myAccount());
-		
 		
 		hpo.myAccount().click();
 		
