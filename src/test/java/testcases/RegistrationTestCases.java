@@ -13,10 +13,10 @@ public class RegistrationTestCases extends BaseClass{
 	@Test
 	public void verifyRegistrationWithValidData() throws InterruptedException {
 		//HomeObject creation
-		HomePageObjects hpo = new HomePageObjects(driver);
-		// Exception handling Pallavi changes
+		HomePageObjects hpo = new HomePageObjects(driver)
+		//Exception handling
 		commonMethods.handleExplicitWait(driver, 10, hpo.myAccount());
-		
+		//Clicking on click
 		hpo.myAccount().click();
 		
 		hpo.register().click();
